@@ -3,52 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Recording</title>
-    <link href="assets/css/styles.css" rel="stylesheet">
+    <title>🧠 Memory Game in JavaScript</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
 </head>
 
 <body>
-    <section class="calculator">
-        <form>
-            <input type="text" name="" id="" class="screen">
-        </form>
-        <div class="buttons">
-            <!-- yellow -->
-            <button type="button" class="btn btn-yellow" data-num="*">*</button>
-            <button type="button" class="btn btn-yellow" data-num="/">/</button>
-            <button type="button" class="btn btn-yellow" data-num="-">-</button>
-            <button type="button" class="btn btn-yellow" data-num="+">+</button>
-            <!-- grey buttons -->
-            <button type="button" class="btn btn-grey" data-num=".">.</button>
-            <button type="button" class="btn btn-grey" data-num="9">9</button>
-            <button type="button" class="btn btn-grey" data-num="8">8</button>
-            <button type="button" class="btn btn-grey" data-num="7">7</button>
-            <button type="button" class="btn btn-grey" data-num="6">6</button>
-            <button type="button" class="btn btn-grey" data-num="5">5</button>
-            <button type="button" class="btn btn-grey" data-num="4">4</button>
-            <button type="button" class="btn btn-grey" data-num="3">3</button>
-            <button type="button" class="btn btn-grey" data-num="2">2</button>
-            <button type="button" class="btn btn-grey" data-num="1">1</button>
-            <button type="button" class="btn btn-grey" data-num="0">0</button>
-            <button type="button" class="btn-equal btn-grey">=</button>
-            <button type="button" class="btn-clear btn-grey">C</button>
-
-
+    <div class="game">
+        <div class="controls">
+            <button>Start</button>
+            <div class="stats">
+                <div class="moves">0 moves</div>
+                <div class="timer">time: 0 sec</div>
+            </div>
         </div>
+        <div class="board-container">
+            <div class="board" data-dimension="4"></div>
+            <div class="win">You won!</div>
+        </div>
+    </div>
 
-
-
-
-
-    </section>
-
-
-
-
-
-    <script src="scripts.js"></script>
+    <script src="assets/js/script.js" defer></script>
 </body>
 
 </html>
